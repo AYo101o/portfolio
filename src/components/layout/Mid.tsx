@@ -11,7 +11,7 @@ export default function Mid() {
       <div className="flex items-center">
         <div className="ring-2 ring-blue-500 w-40 overflow-hidden rounded-full mr-5">
           <Avatar className="">
-            <AvatarImage src="/Avatar.jpeg" alt="user avatar" />
+            <AvatarImage src="/Avatar.jpg" alt="user avatar" />
           </Avatar>
         </div>
         <div className="">
