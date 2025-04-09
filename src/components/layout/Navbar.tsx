@@ -6,7 +6,7 @@ export default function Navbar() {
     const iconStyle = 'mr-3';
 
   return (
-    <nav className="flex justify-between">
+    <nav className="flex justify-between mx-7 mt-10">
       <Link href="/">
         <h1>A.Y.</h1>
       </Link>

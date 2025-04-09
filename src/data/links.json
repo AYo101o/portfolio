@@ -1,8 +1,8 @@
 [
-  { "id": 1, "name": "Home" },
-  { "id": 2, "name": "Projects" },
-  { "id": 3, "name": "Photos" },
-  { "id": 4, "name": "About" },
-  { "id": 5, "name": "Uses" },
-  { "id": 6, "name": "Chat" }
+  { "id": 1, "name": "Home","url": "/" },
+  { "id": 2, "name": "Projects","url": "/" },
+  { "id": 3, "name": "Photos", "url": "/" },
+  { "id": 4, "name": "About", "url": "/about" },
+  { "id": 5, "name": "Uses", "url": "/"  },
+  { "id": 6, "name": "Chat", "url": "/"  }
 ]

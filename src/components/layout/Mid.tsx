@@ -5,7 +5,7 @@ import skills from "@/data/skills.json";
 import links from "@/data/links.json";
 
 type Skill = { name: string };
-type Linki = { id: number; name: String };
+type Linki = { id: number; name: string, url: string };
 
 export default function Mid() {
   const arrowRight = "text-2xl mr-1 w-3 text-gray-400";
@@ -14,7 +14,7 @@ export default function Mid() {
     "bg-gray-300 p-2 rounded-xl text-center border-1 border-gray-400";
 
   return (
-    <div className="flex flex-col justify-between pt-10">
+    <div className="flex flex-col justify-between pt-5">
       <div className="flex items-center">
         <div className=" w-40 overflow-hidden rounded-full  ">
           <Avatar className="w-full h-full ">
@@ -128,10 +128,10 @@ export default function Mid() {
           ))}
         </ul>
       </div>
-      <div className="mt-15">
-        <ul className="grid grid-cols-5 justify-between">
+      <div className="mt-15 ml-3">
+        <ul className="grid grid-cols-4 gap-5">
           {(links as Linki[]).map((link, id)=>(
-            <Link href="" key={id}>{link.name}</Link>
+            <Link href={link.url} key={id}>{link.name}</Link>
           ))}
         </ul>
       </div>
