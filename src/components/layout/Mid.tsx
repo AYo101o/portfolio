@@ -1,20 +1,27 @@
 import { Avatar, AvatarImage } from "@radix-ui/react-avatar";
 import Link from "next/link";
-import { ArrowRight, MoveUpRight, Copy } from "lucide-react";
+import { ArrowRight, MoveUpRight, Copy, ChevronsDown } from "lucide-react";
+import skills from "@/data/skills.json";
+import links from "@/data/links.json";
+
+type Skill = { name: string };
+type Linki = { id: number; name: String };
 
 export default function Mid() {
   const arrowRight = "text-2xl mr-1 w-3 text-gray-400";
   const spanBorder = "flex border-b-2 border-dotted border-gray-900";
+  const skillStyle =
+    "bg-gray-300 p-2 rounded-xl text-center border-1 border-gray-400";
 
   return (
     <div className="flex flex-col justify-between pt-10">
       <div className="flex items-center">
-        <div className="ring-2 ring-blue-500 w-40 overflow-hidden rounded-full mr-5">
-          <Avatar className="">
+        <div className=" w-40 overflow-hidden rounded-full  ">
+          <Avatar className="w-full h-full ">
             <AvatarImage src="/Avatar.jpg" alt="user avatar" />
           </Avatar>
         </div>
-        <div className="">
+        <div className="ml-5">
           <h1 className="text-lg">@AyomideAkinniyi</h1>
           <h2>Frontend Developer | React, Next.js, TypeScript & Web3</h2>
         </div>
@@ -93,13 +100,40 @@ export default function Mid() {
           <span className={spanBorder}>
             <Link href="">ayoakinniyi10@gmail.com</Link>
           </span>
-          <button><Copy className="ml-2 w-4 text-gray-600"/></button>
+          <button>
+            <Copy className="ml-2 w-4 text-gray-600" />
+          </button>
         </div>
       </div>
       <div className="flex mt-5">
-        <span className={`${spanBorder} mr-8`}><Link href=''>Blog</Link><MoveUpRight/></span>
-        <span className={`${spanBorder} mr-8`}><Link href=''>Photos</Link><MoveUpRight/></span>
-        <span className={`${spanBorder} mr-8`}><Link href=''>Stats</Link><MoveUpRight/></span>
+        <span className={`${spanBorder} mr-8`}>
+          <Link href="">Photos</Link>
+          <MoveUpRight className="text-gray-600" />
+        </span>
+      </div>
+      <div className="pt-30 pl-3">
+        <div className="flex rounded-2xl w-45 shadow-lg p-2 items-center border-1 border-amber-50">
+          <h1 className="text-sm">MY CORE SKILLSET </h1>
+          <span className="rounded-full border-amber-50 border-1 shadow-md ml-4 px-1">
+            <ChevronsDown className="text-gray-600 w-4" />
+          </span>
+        </div>
+      </div>
+      <div className="pt-20 ml-5">
+        <ul className="grid grid-cols-3 gap-4 text-black">
+          {(skills as Skill[]).map((skill, index) => (
+            <li key={index} className={skillStyle}>
+              {skill.name}
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div className="mt-15">
+        <ul className="grid grid-cols-5 justify-between">
+          {(links as Linki[]).map((link, id)=>(
+            <Link href="" key={id}>{link.name}</Link>
+          ))}
+        </ul>
       </div>
     </div>
   );

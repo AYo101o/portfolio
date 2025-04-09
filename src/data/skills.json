@@ -1,0 +1,10 @@
+[
+    {"name": "javascript"},
+    {"name": "TypeScript"},
+    {"name": "HTML"},
+    {"name": "CSS"},
+    {"name": "NodeJs"},
+    {"name": "React"},
+    {"name": "Zustand"},
+    {"name": "Git"}
+]
