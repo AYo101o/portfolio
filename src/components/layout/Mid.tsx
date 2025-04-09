@@ -14,7 +14,7 @@ export default function Mid() {
     "bg-gray-300 p-2 rounded-xl text-center border-1 border-gray-400";
 
   return (
-    <div className="flex flex-col justify-between pt-5">
+    <div className="flex flex-col justify-between pt-5 pb-20">
       <div className="flex items-center">
         <div className=" w-40 overflow-hidden rounded-full  ">
           <Avatar className="w-full h-full ">
@@ -112,8 +112,8 @@ export default function Mid() {
         </span>
       </div>
       <div className="pt-30 pl-3">
-        <div className="flex rounded-2xl w-45 shadow-lg p-2 items-center border-1 border-amber-50">
-          <h1 className="text-sm">MY CORE SKILLSET </h1>
+        <div className="flex rounded-2xl w-45 shadow-lg p-1 items-center border-1 border-amber-50">
+          <h1 className="text-xs">MY CORE SKILLSET </h1>
           <span className="rounded-full border-amber-50 border-1 shadow-md ml-4 px-1">
             <ChevronsDown className="text-gray-600 w-4" />
           </span>
