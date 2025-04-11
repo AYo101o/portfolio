@@ -1,6 +1,6 @@
 import { Avatar, AvatarImage } from "@radix-ui/react-avatar";
 import Link from "next/link";
-import { ArrowRight, MoveUpRight, Copy, ChevronsDown } from "lucide-react";
+import { ChevronRight, MoveUpRight, Copy, ChevronsDown } from "lucide-react";
 import skills from "@/data/skills.json";
 import links from "@/data/links.json";
 
@@ -46,19 +46,19 @@ export default function Mid() {
         <div className="pl-3 mb-3">
           <ol className="">
             <li className="flex">
-              <ArrowRight className={arrowRight} />
+              <ChevronRight className={arrowRight} />
               Writing clean, maintainable frontend code
             </li>
             <li className="flex">
-              <ArrowRight className={arrowRight} />
+              <ChevronRight className={arrowRight} />
               Creating fast and accessible user interfaces
             </li>
             <li className="flex">
-              <ArrowRight className={arrowRight} />
+              <ChevronRight className={arrowRight} />
               Learning modern tools and improving workflows
             </li>
             <li className="flex">
-              <ArrowRight className={arrowRight} />
+              <ChevronRight className={arrowRight} />
               Sharing knowledge and helping others grow
             </li>
           </ol>
