@@ -1,6 +1,6 @@
 [
   { "id": 1, "name": "Home","url": "/" },
-  { "id": 2, "name": "Projects","url": "/" },
+  { "id": 2, "name": "Projects","url": "/projects" },
   { "id": 3, "name": "Photos", "url": "/" },
   { "id": 4, "name": "About", "url": "/about" },
   { "id": 5, "name": "Uses", "url": "/"  },

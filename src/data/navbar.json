@@ -1,0 +1,6 @@
+[
+  { "id": 1, "icon": "FolderGit2", "url":"/projects" },
+  { "id": 2, "icon": "MessageSquareShare", "url":"/" },
+  { "id": 3, "icon": "Sun", "url":"/" },
+  { "id": 4, "icon": "Eclipse", "url":"/" }
+]
